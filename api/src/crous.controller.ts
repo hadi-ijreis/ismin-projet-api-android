@@ -10,8 +10,8 @@ import {
 
 } from '@nestjs/common';
 import { CrousService } from './crous.service';
-import { Crous } from './Crous';
-import { CrousDto} from './CrousDto';
+import { Crous } from './crous';
+import { CrousDto} from './crousDto';
 
 @Controller('/crous')
 export class CrousController {
