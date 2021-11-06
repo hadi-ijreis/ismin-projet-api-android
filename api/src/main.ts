@@ -5,6 +5,6 @@ import { CrousModule } from './crous.module';
 async function bootstrap() {
   const app = await NestFactory.create(CrousModule);
   app.useGlobalPipes(new ValidationPipe());
-  await app.listen(3000);
+  await app.listen(process.env.PORT);
 }
 bootstrap();
