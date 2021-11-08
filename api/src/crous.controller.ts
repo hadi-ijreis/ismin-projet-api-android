@@ -30,9 +30,9 @@ export class CrousController {
     return this.crousService.getCrous(crousToCreate.title);
   }
 
-  @Get(':title')
-  public getCrousWithId(@Param('title') title: string): Crous {
-    return this.crousService.getCrous(title);
+  @Get(':id')
+  public getCrousWithId(@Param('id') id: string): Crous {
+    return this.crousService.getCrous(id);
   }
 
   @Delete(':id')

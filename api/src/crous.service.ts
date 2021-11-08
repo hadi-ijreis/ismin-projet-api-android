@@ -85,11 +85,11 @@ export class CrousService implements OnModuleInit {
         this.crousMap.set(crous.id, crous);
     }
 
-    getCrous(title: string): Crous{
-        const foundCrous = this.crousMap.get(title);
+    getCrous(id: string): Crous{
+        const foundCrous = this.crousMap.get(id);
 
         if(!foundCrous){
-            throw new Error(`No Crous location with the title ${title}`);
+            throw new Error(`No Crous location with the id ${id}`);
         }
 
         return foundCrous;
