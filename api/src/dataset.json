@@ -10,7 +10,8 @@
         "lat": 49.017132, 
         "closing": 0, 
         "type": "Restaurant", 
-        "infos": "Localisation A Cergy \nHoraires 11h30 \u00e0 13h30 \nPaiements possibles  especes \n IZLY"
+        "infos": "Localisation A Cergy \nHoraires 11h30 \u00e0 13h30 \nPaiements possibles  especes \n IZLY",
+        "favorite": false
     },
 
     {
@@ -24,7 +25,8 @@
         "lat": 49.017132, 
         "closing": 0, 
         "type": "Cafeteria", 
-        "infos": "Localisation A Cergy \nHoraires 11h30 \u00e0 13h30 \nPaiements possibles  especes \n IZLY"
+        "infos": "Localisation A Cergy \nHoraires 11h30 \u00e0 13h30 \nPaiements possibles  especes \n IZLY",
+        "favorite": true
     },
 
     {
@@ -38,6 +40,7 @@
         "lat": 49.017132, 
         "closing": 0, 
         "type": "Restaurant", 
-        "infos": "Localisation A Cergy \nHoraires 11h30 \u00e0 13h30 \nPaiements possibles  especes \n IZLY"
+        "infos": "Localisation A Cergy \nHoraires 11h30 \u00e0 13h30 \nPaiements possibles  especes \n IZLY",
+        "favorite": false
     }
 ]

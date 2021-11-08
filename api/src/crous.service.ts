@@ -32,7 +32,7 @@ export class CrousService implements OnModuleInit {
                 contact: crousFromFile.contact,
                 closing: crousFromFile.closing,
                 infos: crousFromFile.infos,
-
+                favorite: false,
             };
 
             return convertedCrous;
@@ -95,6 +95,12 @@ export class CrousService implements OnModuleInit {
         return foundCrous;
     }
 
+    setFavorite(id: string): void{
+        const crous = this.crousMap.get(id);
+        crous.favorite = true;
+        this.crousMap.set(crous.id, crous);
+    }
+    
     getAllCrous(): Crous[]{
         return Array.from(this.crousMap.values()).sort((crous1, crous2) =>
         crous1.id.localeCompare(crous2.id),

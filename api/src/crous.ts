@@ -9,4 +9,5 @@ export interface Crous{
     readonly contact: string;
     readonly closing: number;
     readonly infos: string;
+    favorite: boolean;
 }

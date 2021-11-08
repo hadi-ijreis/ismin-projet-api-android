@@ -7,6 +7,7 @@ import {
   Param,
   Post,
   Query,
+  Put,
 
 } from '@nestjs/common';
 import { CrousService } from './crous.service';
@@ -38,6 +39,11 @@ export class CrousController {
   @Delete(':id')
   public deleteCrous(@Param('id') id: string): void {
     return this.crousService.deleteCrous(id);
+  }
+
+  @Put(':id')
+  public setFavorite(@Param(':id') id: string): void{
+    return this.crousService.setFavorite(id);
   }
 
   @Post('search')

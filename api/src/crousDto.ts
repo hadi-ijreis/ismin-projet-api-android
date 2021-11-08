@@ -31,4 +31,7 @@ export class CrousDto {
     
     @IsNotEmpty()
     readonly infos: string;
+
+    @IsNotEmpty()
+    readonly favorite: boolean;
 }
