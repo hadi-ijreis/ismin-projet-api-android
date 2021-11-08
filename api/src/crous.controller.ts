@@ -42,8 +42,8 @@ export class CrousController {
   }
 
   @Put(':id')
-  public setFavorite(@Param(':id') id: string): void{
-    return this.crousService.setFavorite(id);
+  public setFavorite(@Param(':id') id: string, @Body() crous: Crous): Crous{
+    return this.crousService.setFavorite(id, crous);
   }
 
   @Post('search')

@@ -70,6 +70,7 @@ export class CrousService implements OnModuleInit {
                         contact: externalCrous.fields.contact,
                         closing: externalCrous.fields.closing,
                         infos: externalCrous.fields.infos,
+                        favorite: false,
                         })),
                     ),
                 ),
@@ -95,12 +96,12 @@ export class CrousService implements OnModuleInit {
         return foundCrous;
     }
 
-    setFavorite(id: string): void{
-        const crous = this.crousMap.get(id);
+    setFavorite(id: string, crous: Crous): Crous{
         crous.favorite = true;
-        this.crousMap.set(crous.id, crous);
+        this.addCrous(crous);
+        return crous;
     }
-    
+
     getAllCrous(): Crous[]{
         return Array.from(this.crousMap.values()).sort((crous1, crous2) =>
         crous1.id.localeCompare(crous2.id),
