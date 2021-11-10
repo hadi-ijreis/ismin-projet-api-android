@@ -21,5 +21,18 @@ Un postman collection est disponible dans le repository que vous pouvez utiliser
 
 
 ## 2- Android:
+L’application consiste à afficher les différents types de Crous dans une liste où on peut avoir le détail de chaque élément en cliquant dessus et pouvoir les mettre en favori si possible.
+Ainsi, les étapes effectuées sont :
+-	Mise en place d’un ToolBar contenant 3 Tabs, List, Map et Info permettant de naviger facilement les fragments: CrousListFragment, CrousMapFragment et CrousInfoFragment.
+-	Création d’un fragment « CrousListFragment » pour mettre les listes de données. 
+-	Création d’un fragment « CrousMapFragment » pour marquer les places des crous sur une carte, avec la possibilité de cliquer sur un marker pour voir les détails.
+-	Création d'une activity DetailActivity, qui peut être accéder soit par cliquant sur un crous dans la liste, soit en cliquant sur un marker sur la carte.
+-	Création d'un fragment << CrousInfoFragment>> contenant des informations du projet, avec un lien vers les données et un bouton qui vous amène à une activity contenat une liste des licenses.
+L'application est capable de:
+- Charger les données de l'API déployée sur CleverCloud (Crous-API-HIJ-LH) en utilisant retrofit.
+- Le bouton refresh permet de redemander les données de l'API afin de les mettre à jour.
+- Envoyer des données entres 2 activities en utilisant Intent.
+- Envoyer des données entre un fragment et une activity en utilisant RecyclerView + Adapter
+- Afficher une image à partie d'un lien (les objects Crous contienne une variable image qui est un lien vers l'image) et utilisant une librairie que nous avons trouvé sur github et qui s'appelle Glide (vous pouvez aller à app.gradle pour voir l'implementation).
+- Ajouter un marker sur la carte pour chaque Crous.
 
- 
