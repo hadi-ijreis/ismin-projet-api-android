@@ -97,7 +97,7 @@ export class CrousService implements OnModuleInit {
     }
 
     setFavorite(id: string, crous: Crous): Crous{
-        crous.favorite = true;
+        crous.favorite = !crous.favorite;
         this.addCrous(crous);
         return crous;
     }
