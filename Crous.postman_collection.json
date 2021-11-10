@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "ce3ebfad-93fd-486b-931c-30c7922960b9",
+		"name": "Crous",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"term\": \"Kiosque\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crous-renovations.cleverapps.io/crous/search",
+					"protocol": "https",
+					"host": [
+						"crous-renovations",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"crous",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add/Remove favorite",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"r1\",\r\n        \"type\": \"Restaurant\",\r\n        \"zone\": \"AMIENS CAMPUS\",\r\n        \"title\": \"Restaurant du Bailly\",\r\n        \"photo\": \"https://www.crous-amiens.fr/wp-content/uploads/sites/9/2014/06/restau-bailly-retaille.jpg\",\r\n        \"short_desc\": \"Au campus, à proximité de l'IUT et de la faculté de STAPS\",\r\n        \"geolocalisation\": [\r\n            49.8728469,\r\n            2.265\r\n        ],\r\n        \"contact\": \"Restaurant du Bailly  avenue des Facultés, SALOUEL Téléphone : 03.22.71.91.50 E-mail : ru.amiens-sud.secretariat@crous-amiens.fr\",\r\n        \"closing\": 0,\r\n        \"infos\": \"Localisation Au campus, à proximité de l'IUT et de la faculté de STAPS \\nHoraires Restauration traditionnelle : Ouvert de 11h à 13h45 du lundi au vendredi et de 18h30 à 20h15 du lundi au jeudi Snack et sandwicherie : ouvert de 8h à 14h \\nPratique  Accessible aux personnes à mobilité réduite \\n\\nPaiements possibles  IZLY\",\r\n        \"favorite\": false\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crous-renovations.cleverapps.io/crous/r1",
+					"protocol": "https",
+					"host": [
+						"crous-renovations",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"crous",
+						"r1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Crous",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://crous-renovations.cleverapps.io/crous/",
+					"protocol": "https",
+					"host": [
+						"crous-renovations",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"crous",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Crous",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://crous-renovations.cleverapps.io/crous/",
+					"protocol": "https",
+					"host": [
+						"crous-renovations",
+						"cleverapps",
+						"io"
+					],
+					"path": [
+						"crous",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a Crous",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get Crous by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
