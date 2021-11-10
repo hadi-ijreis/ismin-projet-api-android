@@ -4,9 +4,9 @@ Course followed by students of Mines St Etienne, ISMIN - M2 Computer Science.
 
 [![Mines St Etienne](./logo.png)](https://www.mines-stetienne.fr/)
 
-# Project template
+# Projet Application Android et API qui permet de voir les informations des Crous en France
 
-This project template contains:
+## This project template contains:
  - a skeleton NestJS app in `api`  (can be opened in Webstorm, Visual Studio Code etc)
  - a skeleton Android app in `android` (can be opened in Android Studio)
  
