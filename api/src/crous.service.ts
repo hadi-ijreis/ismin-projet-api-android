@@ -28,7 +28,7 @@ export class CrousService implements OnModuleInit {
                 title: crousFromFile.title, 
                 photo: crousFromFile.photo,
                 short_desc: crousFromFile.short_desc,
-                geolocalisation: crousFromFile.short_desc,
+                geolocalisation: crousFromFile.geolocalisation,
                 contact: crousFromFile.contact,
                 closing: crousFromFile.closing,
                 infos: crousFromFile.infos,
